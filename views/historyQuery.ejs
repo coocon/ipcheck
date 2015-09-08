@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/bootstrap/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/dep/kendo.common.core.min.css' />
+    <link rel='stylesheet' href='/dep/kendo.uniform.min.css' />
+    <link rel='stylesheet' href='/css/style.css' />
+    <style>
+p {margin: 5px} 
+.result-items {float:left;margin-left: 10px;}
+    </style>
+  </head>
+  <body>
+
+    <div class="body-wrap">
+        <h1><%= title %>
+            <a class="btn btn-primary" id="btn-query">查询</a> 
+        </h1>
+        <div class="condition clearfix">
+            <div class="result-wrap">
+                <div class="result-items">
+                    <p>总计分析IP记录数：<em id="total">3333</em></p> 
+                    <p>待考察的IP记录数：<em id="diff">3333</em></p> 
+                </div>
+            </div>
+        </div>
+        <div id="ip-table-wrap"></div> 
+        
+    </div>
+
+    <% include  esl.ejs %>
+    
+    <script>
+        require(['home/main'], function (main) {
+            main.enter();         
+        }); 
+          
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>Holmes - 欢迎登录</title>
+<link  rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+<link  rel="stylesheet" href="/css/bootstrap/css/bootstrap.small.min.css">
+<link  rel="stylesheet" href="/css/style.css">
+<script>
+    var _CSRF = '';
+    var _USERNAME = '';
+</script>
+
+ 
+<link  rel="stylesheet" href="../css/login.css">
+
+</head>
+
+<body class="bg-dark">
+    <div class="body-wrap">
+        <div class="container ">
+            <div class="logo-wrap clearfix">
+                <img class="img-logo" src="/img/logo_login.png"> 
+            </div> 
+            <!--form start -->
+                <form id="login-form" class="login-form " name="login-form" action="#"> 
+        <input id="txt-username" type="text" class="txt-username" placeholder="账户名" >
+        <div class="password">
+            <input id="txt-password" type="password" class="" placeholder="密码" autocomplete="off">
+            <span id="capsLockHint" class="caps-tip" style="display:none">大写状态开启</span>
+        </div> 
+
+        <a class="btn-ok btn" id="btn-login" title="点击登录系统">登录</a>
+        <input type="submit" value="提交" style="display:none">
+
+        <a class="btn-forget" href="#" title="点击找增峰">忘记密码请联系增峰?</a>
+        <p class="" id="txt-error"></p> 
+    </form>
+
+
+            <!--form end -->
+        </div>
+    </div>
+          
+
+    <div class="" id="loading-tip"></div>
+
+<script src="/dep/jquery.min.js"></script>
+<script src="/dep/esl.min.js"></script>
+<script>
+require.config({
+    baseUrl: '../src',
+        packages: [
+           { name: 'kendo',
+                location: '/dep',
+                main: 'kendo.ui.core.min'
+           }
+        ]
+    });
+</script>
+
+
+<script>
+//页面入口
+require(['login/main'], function (main) {
+    main.enter(); 
+});
+
+</script>
+
+
+</body>
+</html>
+

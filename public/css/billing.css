@@ -1,0 +1,78 @@
+/**
+ * query页面
+ */
+
+body div.body-wrap {
+}
+body {
+    background-image:none;
+    background-color: #fff;
+    color: #666;
+}
+.container {
+    width:1280px !important;
+}
+
+.screen-block {padding-top: 50px;}
+h1 {text-align:center;font-size:18px;}
+h2 {font-size:14px;}
+.row {margin: 10px; }
+.title {font-size:12px;margin-right:5px;width: 100px;text-align:right;display:inline-block;}
+.des {display:inline-block; width:400px;}
+form {margin: 0px}
+.wrap-title {
+    border-bottom: solid 2px #ccc;
+}
+.total {text-align: right;padding-right:20px;font-size:16px;font-weight:bold}
+.total-num {display:inline-block;padding-left: 5px}
+table th {
+    color: #333;
+    text-align: center !important;
+}
+table td {
+    color: #666;
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+.area-wrap span {
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px #ccc;
+    line-height: 28px;
+    line-height: 28px;
+}
+.area-wrap span:last-child {
+    border-bottom: none;
+}
+.area-td {
+    padding: 0 !important;
+}
+
+/*账单 收款信息的位置*/
+.ps {width:350px;margin: 100px 0 20px 10px}
+.ps p {margin:0}
+.ps-title {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 50px;
+}
+.ps-content {margin-left: 20px}
+.ps-item {padding-left:20px}
+.wrap-title {margin-top: 60px;padding-bottom: 10px;}
+.content-center {width: 1180px;padding: 0 40px;padding-right: 60px}
+.table>thead>tr>th {border-bottom-width: 1px;}
+.table-wrap tbody {border-bottom:solid 1px #ccc;}
+@media print {
+　　body {
+        color: red;
+　　}
+    .btn-row {
+        display: none; 
+    }
+    .ps {font-size: 10px}
+    .content-center {
+        margin-top: 100px; 
+    }
+    
+}
+

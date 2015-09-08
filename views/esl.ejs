@@ -1,0 +1,14 @@
+<script src="/dep/jquery.min.js"></script>
+<script src="/dep/esl.min.js"></script>
+<script>
+require.config({
+    baseUrl: '/src',
+    packages: [
+        { 
+            name: 'kendo',
+            location: '/dep',
+            main: 'kendo.ui.core.min'
+        }
+    ]
+}); 
+</script>

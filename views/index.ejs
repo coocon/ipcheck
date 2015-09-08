@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel='stylesheet' href='/css/bootstrap/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/dep/kendo.common.core.min.css' />
+    <link rel='stylesheet' href='/dep/kendo.uniform.min.css' />
+    <link rel='stylesheet' href='/css/style.css' />
+    <style>
+textarea::-moz-placeholder:after{
+    display:block;
+    content:"192.168.1.1  192.168.1.111 \A 192.168.1.2";/*  \A 表示换行  */
+    color:red;
+}
+textarea::-webkit-input-placeholder:after{
+    display:block;
+    content:"192.168.1.1  192.168.1.111 \A 192.168.1.2";/*  \A 表示换行  */
+    color:red;
+}
+#txtIP {
+    width: 100%;
+    overflow:auto;
+    word-break: break-all;
+    height: 80px;
+}
+p {margin: 5px} 
+
+.result-items {float:left;margin-left: 10px;}
+    </style>
+  </head>
+  <body>
+    <div class="body-wrap">
+        <div class="">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">IP地址查询</a></li>
+                <li role="presentation"><a href="#"><del>地址库比较</del></a></li>
+            </ul> 
+        </div>
+        <div class="col-lg-12">
+            <h3> 请输入要查询的IP...
+                <a class="btn btn-primary" id="btn-query">查询</a> 
+                <a class="btn btn-danger" id="btn-clear">清空</a> 
+            </h3>
+            <div class="condition clearfix">
+                <textarea id="txtIP"  placeholder="多个IP用空格或者换行分开:"></textarea>
+            </div>
+            <div id="ip-table-wrap"></div> 
+        </div>
+    </div>
+    <% include  esl.ejs %>
+    <script>
+        require(['home/main'], function (main) {
+            main.enter();
+        }); 
+          
+    </script>
+  </body>
+</html>

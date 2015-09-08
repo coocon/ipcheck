@@ -1,0 +1,159 @@
+
+body {
+    font-family: 'Microsoft Yahei', '微软雅黑', '宋体', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti !important;
+    color: #5a5a5a;
+    height: 100%;
+    min-height: 100%;
+    font-size: 12px;
+    background:rgb(247,247,247); 
+    margin: 0 auto;
+}
+
+.body-wrap {
+    padding: 10px;
+}
+input {color: #333}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bg-dark .body-wrap{
+	margin:0 auto;
+	width: 100%;
+}
+
+.screen-block {
+    min-height: 495px;
+    position: relative;
+    margin-top:50px;
+
+}
+.fixed-center {
+    width: 600px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 13px;
+    padding-left: 13px;
+}
+
+/*left-menu的样式 */
+.left-menu {
+    font-size: 14px;
+    color: #c4c5c6;
+    margin-top: 25px;
+    letter-spacing: 3px;
+    width: 260px;
+    height: 100%;
+    position: absolute;
+    margin-top: 14px;
+    text-align: left;
+
+    background: url(/img/background/bg_left_menu_v4.png) repeat-x rgba(0,0,0,.6);
+}
+.left-menu .tab-menu {
+
+}
+.left-menu li.active {
+    /*
+    background-color: #353a57;
+    */
+    background: url(/img/background/left_menu_active_v3.png) right top no-repeat;
+}
+
+.left-menu li a {
+    font-size: 14px;
+    color: #c4c5c6;
+    height: 60px;
+    padding-left: 80px;
+    line-height: 60px;
+
+}
+
+.left-menu li a:hover {
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.left-menu li.active a {
+    font-size: 16px;
+    color: #fff;
+}
+
+/** footer区域 */
+.footer {
+    height: 60px;
+    position: relative;
+    margin-top: -60px;
+    background: rgba(23,40,63,0.4) !important;
+    margin: 0 auto;
+}
+
+.page-footer-img {
+    position: absolute;
+    right: 70px;
+    top: -23px;
+    width: 258px;
+    height: 71px;
+
+}
+.table-color {color:#666;}
+/*loading tip*/
+#loading-tip {
+    width: 130px;
+    height: 37px;
+    margin: 0px;
+    padding: 0px 0px 4px;
+    display: none;
+    position: fixed;
+    top: 10px;
+    z-index: 20000;
+    left: 500px;
+    text-align: center;
+}
+
+#userlist {
+    width: 200px;     
+}
+.title {
+    float:left;
+    margin-right: 10px;
+}
+.userlist {
+    float:left;
+}
+.condition {
+    border: solid 1px #ccc;
+    padding: 8px;
+}
+.condition label {
+    line-height: 30px;
+}
+#btn-query {
+    margin-left: 20px;
+}
+
+#btn-submit {
+    float: right;
+}
+.nav a {
+    color: #563d7c;
+    font-weight: 500;
+}
+.page-title {
+    font-size:16px;
+    float:left;
+}
+.checklabel {
+    float:left;
+    width:80px;
+    padding:0;
+}
+.control-label {
+    min-width: 94px;
+}
+.form-group {
+    margin-top:15px;
+}

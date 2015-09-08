@@ -1,0 +1,10 @@
+/**
+ * query页面
+ */
+
+.row {margin: 10px;}
+.title {font-size:12px;margin-right:5px;width: 60px;text-align:right}
+form {margin: 0px}
+.wrap-title {
+    border-bottom: solid 1px #ccc;
+}

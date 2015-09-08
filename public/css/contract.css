@@ -1,0 +1,31 @@
+/**
+ * query页面
+ */
+
+.row {margin: 10px;}
+.title {font-size:12px;margin-right:5px;text-align:left}
+form {border-bottom: solid 1px #ccc}
+select {
+    width: 100%; padding: 0 3px;
+}
+.range-wrap {padding-left: 10px; border-left: solid 1px #ccc}
+
+.range-wrap li {
+    padding-bottom:6px;
+    margin-top:6px;
+    border-bottom: dashed 1px #ccc;
+}
+.range-wrap input, .zero  {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+}
+.range-wrap label {
+    margin-left: 10px;
+}
+
+.range-wrap .price {width: 100px;}
+.zero {text-align: center; font-size: 14px;}
+.table>tbody>tr>td {
+    vertical-align: middle;
+}
